@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: bace-sunday-register
+    runtime: node
+    plan: starter
+    buildCommand: echo "nothing to install"
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
+      - key: DATA_DIR
+        value: /var/data
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        sync: false
+    disk:
+      name: register-data
+      mountPath: /var/data
+      sizeGB: 1

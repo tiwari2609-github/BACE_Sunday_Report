@@ -1,0 +1,13 @@
+{
+  "name": "bace-sunday-register",
+  "version": "1.0.0",
+  "description": "Sunday programme register for BACE with logins, roles and live progress",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
